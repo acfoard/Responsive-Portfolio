@@ -15,7 +15,7 @@ body {
 }
 
 .bodyContent {
-    width: 100%;
+    width: 95%;
     max-width: 960px;
     height: 100%;
     box-sizing: border-box;
@@ -152,7 +152,7 @@ h2 {
         max-width: 600px;
     }
     .projectLink {
-        margin: 5px;
+        margin: 15px 5px;
     }
   }
   
