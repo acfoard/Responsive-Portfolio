@@ -19,7 +19,7 @@ body {
     max-width: 960px;
     height: 100%;
     box-sizing: border-box;
-    padding: 0px 25px;
+    padding: 0px 2%;
     margin-top: 76px;
     margin-bottom: 50px;
     margin-left: 7%;
@@ -35,7 +35,8 @@ h2, h1 {
     background: #4aaaa5;
     font-size: 1.5em;
     font-weight: bold;
-    width: 200px;
+    width: 18%;
+    min-width: 200px;
     float: left;
     color: white;
     line-height: 3;
@@ -65,8 +66,8 @@ h2 {
 
 .projectLink {
     float: left;
-    width: 250px;
-    height: 180px;
+    width:45%;
+    height: auto;
     margin: 15px;
     position: relative;
 }
@@ -81,7 +82,7 @@ h2 {
     bottom: 10px;
     width: 100%;
     background: #4aaaa5;
-    height: 50px;
+    height: auto;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
@@ -114,7 +115,7 @@ h2 {
 
   p {
       line-height: 2.0;
-      margin: 15px 15px;
+      margin: 4%;
   }
 
   .formPad {
@@ -164,9 +165,14 @@ h2 {
       }
   }
 
+  @keyframes headerposition {
+      from {position: fixed;}
+      to {position: static;}
+  }
   @media screen and (max-width: 640px) {
     header {
-        position: static;
+        animation-name: headerposition;
+        animation-duration: 1s;
     }
     
     .headerTitle{
