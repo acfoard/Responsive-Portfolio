@@ -154,6 +154,15 @@ h2 {
     }
   }
   
+    @keyframes slideDown {
+        from {top: -40px;}
+        to {top: 0px;}
+    }
+
+    @keyframes unRelative {
+        from {position: relative;}
+        to {position: static;}
+    }
 
   @media screen and (max-width: 768px) {
       .picContainer {
@@ -162,7 +171,7 @@ h2 {
       }
   }
 
-  
+
 
   @media screen and (max-width: 640px) {
     header {
@@ -180,6 +189,11 @@ h2 {
         text-align: center;
         line-height: 3;
     } 
+
+    .linkTitle {
+        font-size: 1em;
+        line-height: 2;
+    }
 
     .bodyContent{
         max-width: 586px;
