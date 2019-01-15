@@ -159,6 +159,8 @@ h2 {
         to {top: 0px;}
     }
 
+    /* started playing with animations in an attempt to slide the nav links down from behind the h1 on the small breakpoint. Ultimately couldn't pull it off. */
+
     @keyframes unRelative {
         from {position: relative;}
         to {position: static;}
