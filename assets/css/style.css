@@ -199,12 +199,12 @@ h2 {
 
     .bodyContent{
         max-width: 586px;
-        margin-left: 3%;
-        margin-top: 10px;
+        margin: 10px auto 0px;
     } 
 
     .projectLink {
-        margin: 15px;
+        margin: 15px auto;
+        float: none;
     }
 
     .picContainer {
