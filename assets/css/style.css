@@ -169,6 +169,10 @@ a.divLink {
       padding: 5px;
   }
 
+  .hide {
+      display: none;
+  }
+
   @media screen and (max-width: 980px) {
     .bodyContent {
         max-width: 600px;
