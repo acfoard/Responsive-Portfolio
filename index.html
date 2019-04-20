@@ -1,115 +1,204 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Andrew Foard - About Me</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="text/javascript"
+      src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function() {
+        emailjs.init("user_PvABvsjAlINaXR5B8G5A4");
+      })();
+    </script>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="headerTitle">
-            <h1>Andrew Foard</h1>
-        </div>
-        <nav class="navLinks">
-            <a href="#about" id="showHome">About</a> |
-            <a href="#portfolio" id="showPortfolio">Portfolio</a> |
-            <a href="#contact" id="showContact">Contact</a>
-        </nav>
+      <div class="headerTitle">
+        <h1>Andrew Foard</h1>
+      </div>
+      <nav class="navLinks">
+        <a href="#about" id="showHome">About</a> |
+        <a href="#portfolio" id="showPortfolio">Portfolio</a> |
+        <a href="#contact" id="showContact">Contact</a>
+      </nav>
     </header>
     <main class="bodyContent clearFix">
-        <div class="contentPage" id="home">
-            <div class="subHeader">
-                <h2>About Me</h2>
-            </div>
-            <div class="picContainer">
-                <img src="./assets/images/Profile.jpg" alt="Andrew Foard profile" class="profilePic">
-            </div>
-            <p>Andrew was born and raised in Richmond, VA and spent his formative years riding his bicycle with his
-                friends
-                in search of mischief and mud puddles. Once mud puddles lost their appeal and high school was completed,
-                he
-                moved to Statesboro, GA to attend Georgia Southern University where he graduated with a BBA in
-                Marketing.
-                Following college Andrew took up residence in the suburbs of northern Atlanta, settling down in
-                Woodstock
-                with his wife, three chidren, two dogs and a cat.</p>
-            <p>Over the last decade Andrew has worked as a business analyst on varying software development projects. As
-                a
-                natural progression to his career he has taken on the title of developer.</p>
-            <p>In his spare time Andrew enjoys playing hockey, mountain biking, and undertaking massive lego projects
-                with
-                his kids. Andrew also finds enjoyment in introducing his children to pop-culture of the 1980's and 90's.
-                His children have taken to the Teenage Mutant Ninja Turtles, Animaniacs, Ghostbusters, Ozzy Osbourne and
-                the Beastie Boys but have resisted Thundercats, He-man and Right Said Fred. And although only one will
-                admit it, all three children once had an affinity for "Barbie Girl" by Aqua.</p>
-            <p>Lastly, Andrew loves to travel. He has been fortunate enough to experience scuba diving on the Great
-                Barrier
-                Reef, jumping the prime meridian in Greenwich, United Kingdom and grocery shopping in Boliver, Missouri.
-            </p>
+      <div class="contentPage" id="home">
+        <div class="subHeader">
+          <h2>About Me</h2>
         </div>
-        <div class="contentPage" id="contactPage">
-            <h2 class="subHeader">Contact</h2>
-            <form action="" class="formPad">
-                Name: <br>
-                <input type="text" name="name" value="John Smith" class="formField formPad"><br>
-                Email: <br>
-                <input type="email" name="email" value="example@gmail.com" class="formField formPad"><br>
-                Message <br>
-                <textarea rows="8" name="message" class="formField formPad"></textarea> <br>
-                <input type="submit" name="submit" id="submit" class="submitButton">
-            </form>
+        <div class="picContainer">
+          <img
+            src="./assets/images/Profile.jpg"
+            alt="Andrew Foard profile"
+            class="profilePic"
+          />
         </div>
-        <div class="contentPage" id="portfolioPage">
-            <div class="subHeader">
-                <h2>Portfolio</h2>
-            </div>
-            <div class="divRow clearFix">
-                <div class="projectLink firstPosition">
-                    <a class="divLink" href="https://doodle-bug-quest.herokuapp.com/" target=blank></a>
-                    <img src="./assets/images/placeHolder6.jpg" alt="" class="imageLink">
-                    <div class="linkTitle">Doodle Bug Quest</div>
-                </div>
-                <div class="projectLink">
-                    <a class="divLink" href="https://acfoard.github.io/smartify/" target=blank></a>
-                    <img src="./assets/images/placeHolder2.jpg" alt="" class="imageLink">
-                    <div class="linkTitle">SMARTify</div>
-                </div>
-            </div>
-            <div class="divRow clearFix">
-                <div class="projectLink firstPosition">
-                    <a class='divLink' href='https://cryptic-lake-59302.herokuapp.com/' target=blank></a>
-                    <img src="./assets/images/placeHolder3.jpg" alt="" class="imageLink">
-                    <div class="linkTitle">Tiny Improvements</div>
-                </div>
-                <div class="projectLink">
-                    <a class='divLink' href='https://murmuring-hollows-16045.herokuapp.com/' target=blank></a>
-                    <img src="./assets/images/placeHolder4.jpg" alt="" class="imageLink">
-                    <div class="linkTitle">Bamazon</div>
-                </div>
-            </div>
-            <div class="divRow clearFix">
-                <div class="projectLink firstPosition">
-                    <a class='divLink' href='https://nameless-hollows-80143.herokuapp.com/' target=blank></a>
-                    <img src="./assets/images/placeHolder5.jpg" alt="" class="imageLink">
-                    <div class="linkTitle">Employee Matcher</div>
-                </div>
-                <div class="projectLink">
-                    <a class="divLink" href="https://acfoard.github.io/Stock_Tracker/" target=blank></a>
-                    <img src="./assets/images/placeHolder1.jpg" alt="" class="imageLink">
-                    <div class="linkTitle">Stock Tracker</div>
-                </div>
-            </div>
+        <p>
+          Andrew was born and raised in Richmond, VA and spent his formative
+          years riding his bicycle with his friends in search of mischief and
+          mud puddles. Once mud puddles lost their appeal and high school was
+          completed, he moved to Statesboro, GA to attend Georgia Southern
+          University where he graduated with a BBA in Marketing. Following
+          college Andrew took up residence in the suburbs of northern Atlanta,
+          settling down in Woodstock with his wife, three chidren, two dogs and
+          a cat.
+        </p>
+        <p>
+          Over the last decade Andrew has worked as a business analyst on
+          varying software development projects. As a natural progression to his
+          career he has taken on the title of developer.
+        </p>
+        <p>
+          In his spare time Andrew enjoys playing hockey, mountain biking, and
+          undertaking massive lego projects with his kids. Andrew also finds
+          enjoyment in introducing his children to pop-culture of the 1980's and
+          90's. His children have taken to the Teenage Mutant Ninja Turtles,
+          Animaniacs, Ghostbusters, Ozzy Osbourne and the Beastie Boys but have
+          resisted Thundercats, He-man and Right Said Fred. And although only
+          one will admit it, all three children once had an affinity for "Barbie
+          Girl" by Aqua.
+        </p>
+        <p>
+          Lastly, Andrew loves to travel. He has been fortunate enough to
+          experience scuba diving on the Great Barrier Reef, jumping the prime
+          meridian in Greenwich, United Kingdom and grocery shopping in Boliver,
+          Missouri.
+        </p>
+      </div>
+      <div class="contentPage" id="contactPage">
+        <h2 class="subHeader">Contact</h2>
+        <form action="" class="formPad">
+          Name: <br />
+          <input
+            type="text"
+            id='fromName'
+            name="name"
+            placeholder="John Smith"
+            class="formField formPad"
+          /><br />
+          Email: <br />
+          <input
+            type="email"
+            id='fromEmail'
+            name="email"
+            placeholder="example@gmail.com"
+            class="formField formPad"
+          /><br />
+          Message <br />
+          <textarea
+            rows="8"
+            id='message'
+            name="message"
+            class="formField formPad"
+          ></textarea>
+          <br />
+          <input type="submit" name="submit" id="submit" class="submitButton" />
+        </form>
+      </div>
+      <div class="contentPage" id="portfolioPage">
+        <div class="subHeader">
+          <h2>Portfolio</h2>
         </div>
+        <div class="divRow clearFix">
+          <div class="projectLink firstPosition">
+            <a
+              class="divLink"
+              href="https://doodle-bug-quest.herokuapp.com/"
+              target="blank"
+            ></a>
+            <img
+              src="./assets/images/placeHolder6.jpg"
+              alt=""
+              class="imageLink"
+            />
+            <div class="linkTitle">Doodle Bug Quest</div>
+          </div>
+          <div class="projectLink">
+            <a
+              class="divLink"
+              href="https://acfoard.github.io/smartify/"
+              target="blank"
+            ></a>
+            <img
+              src="./assets/images/placeHolder2.jpg"
+              alt=""
+              class="imageLink"
+            />
+            <div class="linkTitle">SMARTify</div>
+          </div>
+        </div>
+        <div class="divRow clearFix">
+          <div class="projectLink firstPosition">
+            <a
+              class="divLink"
+              href="https://cryptic-lake-59302.herokuapp.com/"
+              target="blank"
+            ></a>
+            <img
+              src="./assets/images/placeHolder3.jpg"
+              alt=""
+              class="imageLink"
+            />
+            <div class="linkTitle">Tiny Improvements</div>
+          </div>
+          <div class="projectLink">
+            <a
+              class="divLink"
+              href="https://murmuring-hollows-16045.herokuapp.com/"
+              target="blank"
+            ></a>
+            <img
+              src="./assets/images/placeHolder4.jpg"
+              alt=""
+              class="imageLink"
+            />
+            <div class="linkTitle">Bamazon</div>
+          </div>
+        </div>
+        <div class="divRow clearFix">
+          <div class="projectLink firstPosition">
+            <a
+              class="divLink"
+              href="https://nameless-hollows-80143.herokuapp.com/"
+              target="blank"
+            ></a>
+            <img
+              src="./assets/images/placeHolder5.jpg"
+              alt=""
+              class="imageLink"
+            />
+            <div class="linkTitle">Employee Matcher</div>
+          </div>
+          <div class="projectLink">
+            <a
+              class="divLink"
+              href="https://acfoard.github.io/Stock_Tracker/"
+              target="blank"
+            ></a>
+            <img
+              src="./assets/images/placeHolder1.jpg"
+              alt=""
+              class="imageLink"
+            />
+            <div class="linkTitle">Stock Tracker</div>
+          </div>
+        </div>
+      </div>
     </main>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
     <script src="app.js"></script>
-</body>
-<footer class="footer">
+  </body>
+  <footer class="footer">
     Copyright &copy;
-</footer>
-
+  </footer>
 </html>
