@@ -5,7 +5,7 @@ header {
     height: auto;
     width: 100%;
     border-bottom: 1px solid lightslategray;
-    z-index: 1;
+    z-index: 25;
 }
 
 body {
@@ -85,6 +85,7 @@ h2 {
     text-align: center;
     line-height: 50px;
     color: white;
+    z-index: 20;
 }
 
 .projectLink:hover {
@@ -109,6 +110,26 @@ a.divLink {
     /*workaround to make clickable in IE */
     filter: alpha(opacity=0);
     /*workaround to make clickable in IE */
+}
+a.github:hover {
+    cursor: hand;
+    cursor: pointer;
+    text-decoration: underline;
+}
+a.github {
+    z-index: 20;
+    text-decoration: none;
+    color: white;
+}
+a.appTitle:hover {
+    cursor: hand;
+    cursor: pointer;
+    text-decoration: underline;
+}
+a.appTitle {
+    z-index: 20;
+    text-decoration: none;
+    color: white;
 }
 
 .firstPosition {
